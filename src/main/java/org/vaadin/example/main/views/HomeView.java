@@ -10,9 +10,9 @@ import com.vaadin.flow.router.Route;
 public class HomeView extends VerticalLayout {
 
     public HomeView() {
-
         add(new H1("Hello World!"));
         add(new Paragraph("This is the home view of the application."));
         add(new Button("Go to the playlists", e -> getUI().ifPresent(ui -> ui.navigate("playlist"))));
+        add(new Button("Login", e -> getUI().ifPresent(ui -> ui.navigate("login"))));
     }
 }
